@@ -47,6 +47,13 @@ public class BaiHat {
         this.tenCaSi = tenCaSi;
     }
 
+
+
+
+
+
+
+
     public float getThoiLuong() {
         return thoiLuong;
     }
