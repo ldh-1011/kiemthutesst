@@ -16,9 +16,12 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          distribution: temurin
+          java-version: 17
           cache: maven
+
+      - name: Give permission
+        run: chmod +x mvnw
 
       - name: Build and Test
         run: ./mvnw clean test
