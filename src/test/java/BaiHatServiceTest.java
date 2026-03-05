@@ -26,6 +26,15 @@ public class BaiHatServiceTest {
         assertTrue(service.them(bh));
     }
 
+
+
+
+
+
+
+
+
+
     @Test
     void testThoiLuongSai() {
         BaiHat bh = new BaiHat("BH04","Song","Ca Si",1.5f,"Pop");
