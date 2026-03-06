@@ -25,6 +25,7 @@ public class SanPhamService {
         if (sp.getSoLuong() < 0) {
             throw new RuntimeException("so luong phai lon hon 0");
         }
+
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).getMa().equals(sp.getMa())) {
                 list.set(i, sp);

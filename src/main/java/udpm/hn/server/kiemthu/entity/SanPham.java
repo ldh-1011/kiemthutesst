@@ -9,6 +9,7 @@ public class SanPham {
     private int soLuong;
     private String danhMuc;
 
+
     public SanPham() {
     }
 

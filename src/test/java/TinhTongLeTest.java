@@ -31,4 +31,5 @@ public class TinhTongLeTest {
     void testNBang5() {
         assertEquals(9, service.tinhTongLe(5));
     }
+
 }
