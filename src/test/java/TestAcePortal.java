@@ -12,11 +12,10 @@ public class TestAcePortal {
         driver.get("https://anupdamoda.github.io/AceOnlineShoePortal/index.html");
         driver.manage().window().maximize();
         Thread.sleep(2000);
-        WebElement menu = driver.findElement(By.id("menuToggle"));
+        WebElement menu = driver.findElement(By.cssSelector("#menuToggle input"));
         menu.click();
         Thread.sleep(2000);
-        WebElement signin = driver.findElement(By.linkText("Sign In Portal"));
-        signin.click();
+        driver.get("https://anupdamoda.github.io/AceOnlineShoePortal/SignIn.html");
         Thread.sleep(2000);
         driver.findElement(By.id("usr")).sendKeys("sa");
         driver.findElement(By.id("pwd")).sendKeys("sa");
@@ -24,6 +23,5 @@ public class TestAcePortal {
         driver.findElement(By.xpath("//input[@value='Login']")).click();
         Thread.sleep(3000);
         driver.quit();
-
     }
 }
